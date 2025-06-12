@@ -1,49 +1,48 @@
-Stock Analysis Chatbot
+# Stock Analysis Chatbot
 
-This project presents a Stock Analysis Chatbot built using OpenAI’s GPT-3.5 model and the Yahoo Finance API. It enables users to retrieve real-time stock information and perform technical analysis through a simple, conversational interface. The chatbot is designed to help both novice and experienced investors gain quick access to stock prices, trends, and key indicators like SMA, EMA, and RSI.
+This project features a conversational Stock Analysis Chatbot built using OpenAI’s GPT-3.5 model and the Yahoo Finance API. It enables users to retrieve real-time stock data and perform technical analysis through a natural language interface. The chatbot is designed to assist both beginners and seasoned investors in accessing key stock metrics and visual trends quickly and efficiently.
 
-Features
+## Features
 
-•Natural Language Querying
- 
-Users can ask questions in plain English, such as “What’s the latest price of Apple?” or “Show me the RSI for Zomato.”
-	 
-•Real-Time Stock Data
- 
-Stock data is retrieved using the Yahoo Finance API, ensuring up-to-date information.
-	 
-•Technical Analysis Tools
+- **Natural Language Querying**  
+  Ask questions like “What’s the latest price of Apple?” or “Show me the RSI for Zomato.”
 
-•SMA (Simple Moving Average)
-   
-•EMA (Exponential Moving Average)
-   
-•RSI (Relative Strength Index)
-   
-•Graphical Plots of Stock Prices
- 
-•Graphical Output
- 
-Users can view stock trends through generated plots, aiding visual analysis.
+- **Real-Time Stock Data**  
+  Data is fetched using the Yahoo Finance API via the `yfinance` library.
 
-Tech Stack
+- **Technical Analysis Tools**  
+  - SMA (Simple Moving Average)  
+  - EMA (Exponential Moving Average)  
+  - RSI (Relative Strength Index)
 
- •Language: Python
+- **Graphical Output**  
+  Generates plots to visualize stock price trends and indicators.
 
- •NLP Engine: OpenAI GPT-3.5
+## Tech Stack
 
- •Financial Data Source: Yahoo Finance API (via yfinance)
+- **Language**: Python  
+- **NLP Engine**: OpenAI GPT-3.5  
+- **Financial Data Source**: Yahoo Finance API (`yfinance`)  
+- **Frontend Interface**: Streamlit  
+- **Visualization**: Matplotlib, Plotly
 
- •Frontend Interface: Streamlit
+## How It Works
 
- •Visualization: Matplotlib, Plotly
+1. **Streamlit Interface**  
+   Users interact with a simple web interface to input stock-related queries.
 
-How It Works
+2. **GPT-3.5 Integration**  
+   The model interprets natural language input and extracts the user’s intent.
 
- •Streamlit Frontend: Provides a user-friendly input box for entering stock-related queries.
+3. **Backend Processing**  
+   The chatbot triggers appropriate functions to fetch stock data and compute technical indicators.
 
- •GPT-3.5 Model: Parses the user’s natural language input and identifies intent.
+4. **Results Display**  
+   The chatbot returns answers in both text and graphical formats for clarity and ease of interpretation.
 
- •Backend Functions: Depending on the intent, specific Python functions are triggered to retrieve and analyze stock data.
- 
- •Result Display: The chatbot returns the results in text and graphical formats.
+## Setup Instructions
+
+1. Clone the repository.
+2. Install required dependencies:
+   ```bash
+   pip install -r requirements.txt
